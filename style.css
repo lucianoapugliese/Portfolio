@@ -1,0 +1,164 @@
+/* Base general */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
+}
+html{
+    background-color: #0061a8;
+    color: #fff;
+}
+/* Espacio en los costados del main que excluyen al footer y header */
+main{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+/* Header con imagen de bienvenida */
+header{
+    background-image: url(images/360_F_459862700_blwVQ5me7hzE64Rfe40hX1yycwipwRw1.jpg);
+    height: 200px;
+    background-repeat: repeat-x;
+    background-size: contain;
+    padding: 0;
+}
+/* Tamaños títulos */
+h1 {
+    font-size: xx-large;
+    margin: 1.5rem;
+    text-align: center;
+}
+h2 {
+    margin-bottom: 1.25rem;
+    color: #81e443;
+}
+/* Tamaño y flexbox en la sección sobre mí */
+.seccion1 {
+    display: flex;
+    height: 300px;
+    margin: 1em 0;
+}
+.seccion1 > div:first-child {
+    flex-basis: 50%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: #fff 1.5px dashed;
+    border-radius: 2em;
+}
+.seccion1 > div:first-child ul {
+    display: inline-block;
+    list-style-type: none;
+    font-size: x-large;
+}
+.seccion1 > div:first-child ul:last-child {
+    margin-left: 8em;
+}
+.seccion1 > div:first-child li:last-child {
+    margin-top: 2em;
+}
+.seccion1 > div:last-child {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: cambio-color 5s 3s ease-in-out infinite;
+}
+#contenedor-foto {
+    width:  18em;
+    height: 18em;
+    border-radius: 50%;
+}
+#expansion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:  18em;
+    height: 18em;
+    border-radius: 50%;
+    animation: circulo 5s 2s ease-in-out infinite;
+}
+#contenedor-foto img {
+    height: 100%;
+    border-radius: 50%;
+    justify-self: center;
+}
+@keyframes circulo {
+    0%{background-color: #0061a8;}
+    50%{background-color: #fff;}
+    100%{background-color: #0061a8; border-radius: 0; width: 100%; height: auto;}    
+}
+/* Sección 2 */
+.seccion2 {
+    background-color: #fff;
+    color: #0061a8;
+    display: flex;
+    height: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 2em;
+}
+#formacion {
+    background-color: #0061a8;
+    color: #fff;
+    border-radius: 2em;
+}
+table h3 {font-size: medium;}
+table, td, caption {
+    border: #fff 1px solid;
+    font-size: small;
+    text-align: center;
+    padding: 1em;
+}
+#conocimientos {
+    border-radius: 2em;
+    background-color: #0061a8;
+    color: #fff;
+    padding: 2.55em 4em;
+    margin:  2em;
+    justify-content: space-evenly;
+}
+#conocimientos h3 {
+    text-align: center;
+    margin-bottom: 1.25em;
+}
+#conocimientos > ul{
+    display: inline-block;
+}
+#conocimientos li{
+    font-size: small;
+    margin: 0.25em 1em;
+}
+#hobbies {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2em;
+    background-color: #0061a8;
+    color: #fff;
+    height: 75%;
+    width: 12.5%;
+    padding: 0 2em;
+    justify-content: space-evenly;
+}
+#hobbies h3 {
+    text-align: center;
+}
+#hobbies li {
+    list-style-type: none;
+    font-size: small;
+}
+#hobbies i {
+    float: right;
+}
+footer {
+    background-color: #041a2a;
+}
+footer ul {
+    margin-top: 1em;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 1em 0;
+}
+footer li a {
+    color: #fff;
+}
