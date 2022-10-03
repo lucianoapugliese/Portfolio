@@ -15,7 +15,7 @@ main{
 }
 /* Header con imagen de bienvenida */
 header{
-    background-image: url(images/360_F_459862700_blwVQ5me7hzE64Rfe40hX1yycwipwRw1.jpg);
+    background-image: url(images/360_F_459862700_blwVQ5me7hzE64Rfe40hX1yycwipwRw1.png);
     height: 200px;
     background-repeat: repeat-x;
     background-size: contain;
